@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Customer Page</title>
+    <style>
+        .login-option:hover {
+            transform: none; /* Ghi đè lên hiệu ứng hover hiện tại */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-option">
+        <h1>Khách hàng</h1>
+        <form action="customer-login" method="post">
+            <input type="tel" placeholder="Phone Number" name="phone" pattern="^0\d{9}$" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit" name="button">Đăng nhập</button>
+        </form>
+    </div>
+</body>
+
+</html>
